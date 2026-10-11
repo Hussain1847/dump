@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let tempraturetest = 0;
+
+        if (tempraturetest > 30) {
+            console.log("it's hot outside..");
+        }
+        else if (tempraturetest > 20) {
+            console.log("it's warm outside..");
+        }
+        else if (tempraturetest > 10) {
+            console.log("it's cool outside..");
+        }
+
+        else {
+            console.log("temperature not match..");
+        }
+
+
+        //condition in function
+
+        function vote(age) {
+            if (age >= 18) {
+                return "you can vote..!";
+            }
+            else {
+                return "you cannot vote..!"
+            }
+        }
+        console.log(vote(11));
+
+
+        //now with &&++
+
+        let age = 22;
+
+        if (age >= 18 && age <= 25) {
+            document.write("  Going to Gulshan");
+        }
+
+        else if (age >= 26 && age <= 30) {
+            document.write("Going to johar");
+        }
+
+        else {
+            document.write("age not in the specified range");
+        }
+
+
+        // password
+
+        const correctId = "123";
+        const correctPassword = "1234";
+
+        let userId = prompt("Enter your ID:");
+        let userPassword = prompt("Enter your password");
+
+        if (userId === correctId && userPassword === correctPassword) {
+            document.write(" ' 'Login successful");
+
+        } else {
+            document.write("Invalid ID or password. Please try again");
+        }
+
+
+        function callingfun() {
+            return "   /////welcome";
+        }
+        document.write(callingfun());
+
+        function parfun(name, age) {
+            document.write(" ...... my name is " + name + age);
+        }
+        parfun("umar", 32);
+
+        /// //object
+
+        const form = {
+            name: "ali",
+            age: 532,
+        }
+        console.log(form);
+
+        function obj(name, mothers, clas) {
+            return {
+                name: name,
+                fathername: mothers,
+                clas: clas
+            }
+        }
+        console.log(obj("ali", "shah", "three"));
+
+
+        let a = 10;
+        let b = a++
+        console.log(a);
+        console.log("b", b);
+
+        let c = --b;
+        console.log(c);
+
+        for (let i = 1; i <= 50; i++) {
+            if (i % 2 !== 0) {
+                console.log(i)
+            }
+        }
+
+        let table = 10;
+        for (let a = 1; a <= 10; a++) {
+            //console.log(table+"*"+a+"="+table*a)
+            console.log(`${table}*${a}=${table * a}`)
+        }
+
+
+        let sum = 100;
+
+        while (sum <= 10) {
+            console.log(sum);
+            sum++;
+        }
+
+        do {
+            console.log(sum);
+            sum++;
+        } while (sum <= 10)
+
+
+        //variable
+
+        var Emp_name = "Kamran";
+        var Emp_f_name = "Ali";
+        var Emp_Designation = "IT Manager";
+        var Emp_CNIC = "424242424242";
+        var Emp_Address = "Johar";
+        var Emp_city = "karachi";
+
+
+        // Calling variable
+
+
+        document.write("Employee Name is: " + Emp_name + "<hr>");
+        document.write("Employee Father name is:" + Emp_f_name + "<br>");
+        document.write("Employee CNIC is: " + Emp_CNIC + "<br>");
+        document.write("Employee Address is: " + Emp_Address + "<br>");
+        document.write("Employee Designation is: " + Emp_Designation + "<br>");
+        document.write("Employee City Name is: " + Emp_city);
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

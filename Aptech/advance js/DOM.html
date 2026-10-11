@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <h1 class="selector">Document Object Model</h1>
+    <div id="box2">fwwf</div>
+    <div class="box">gg</div>
+
+<body>
+
+
+    <script>
+
+
+
+
+
+        console.log(document)
+
+        let text = document.getElementById("selecter");
+        console.log(text);
+
+        let boxe = document.getElementById("box2");
+
+        boxe.style.width = "300px"
+        boxe.style.height = "300px"
+        boxe.style.backgroundColor = "blue"
+        boxe.style.marginTop = "20px"
+
+        //text.style.color="red"
+
+        const person = {
+            name: "Aptech",
+            course: "CPISM",
+            address: "Johar"
+        };
+
+
+        console.log(person);
+
+        let keysValue = Object.keys(person);
+        console.log(keysValue);
+
+        let keysValues = Object.values(person);
+        console.log(keysValues);
+
+        let arr = Object.entries(person);
+        console.log(arr);
+
+        let filter = arr.flat(Infinity);
+        console.log(filter)
+
+
+    </script>
+
+
+</body>
+
+</html>

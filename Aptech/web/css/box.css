@@ -1,0 +1,21 @@
+div{
+
+    background-color: aqua;
+    width: 70%;
+    height: 50vh;
+}
+
+
+.parent{
+    background-color: rgb(212, 139, 139);
+    width: 500px;
+    height: 500px;
+
+}
+
+.chlid{
+    width: 50%;
+    background-color: blueviolet;
+    height: 50%;
+
+}

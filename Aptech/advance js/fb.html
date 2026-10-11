@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Request</title>
+    <link rel="stylesheet" href="./fb.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mo1-1RPPCSd54lH3fcOeOWM1wRHxEZ3C1A&s"
+            alt="image">
+        <h3>ahmed</h3>
+        <button id="btn" onclick=friendList()>Add Friend</button>
+    </div>
+
+    <br><br><br>
+
+    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgCPQmyPHrOWxnUvbmQIRwOipjW8woZUreA&s
+        alt="">
+    <h1>query selector</h1>
+    <h6>a</h6>
+    <span>A</span>
+    <p></p>
+    <div id="ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut nihil sequi, eum deserunt vero odit
+        dolor saepe corporis dolore praesentium excepturi accusamus! Voluptatibus numquam enim facere iure id labore?
+    </div>
+
+
+
+
+    <script>
+        const btnc = document.getElementById("btn");
+        const pic = document.getElementById("profile");
+        const heading = document.querySelector("h3");
+        const circle = document.querySelector("div#ab");
+        console.log(circle);
+
+        circle.style.width = "300px"
+        circle.style.height = "300px"
+        circle.style.backgroundColor = "blue"
+
+        const btn = document.getElementById("btn");
+        // btn.innerHtml = "Request send"
+        let count = 0;
+
+        const friendList = () => {
+            console.log("working")
+            if (count === 0) {
+
+                btn.innerHTML = "Request send";
+                heading.innerHTML = "moshin"
+                btn.style.backgroundColor = "red";
+                count++;
+
+            } else if (count === 1) {
+                btn.innerHTML = "add friend";
+                btn.style.backgroundColor = "blue"
+                btn.style.color = "#fff"
+                count--;
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

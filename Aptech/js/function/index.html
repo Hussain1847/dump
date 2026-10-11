@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function myFunction() {
+            console.log("Welcome to Apna College!");
+            console.log("We are learning JS :)");
+        }
+        myFunction();
+        myFunction();
+
+        function myFunctio(msg, n) {
+            //parameter -> input
+            console.log(msg, n);
+        }
+        myFunctio("i love js", 100);//argument
+
+        function sum(x, y) { //function kae parameter function tak hein *1
+            // console.log(x+y);
+            s = x + y;
+            return s;
+            ///return kae baad ki line excute nhi hoti 
+        }
+        let Val = sum(10, 20);
+        //*1 yhn per x print krne per undefine aye ga
+        console.log(Val);
+
+
+        ///arrow function
+        const arrowMul = (a, b) => {
+            return a * b;
+        };
+        let a = arrowMul(10, 2);
+        console.log(a);
+
+        const printHello = () => console.log("hello");
+        printHello()
+
+
+        //practice qs in which it will print vowels from any word
+        function countVowels(str) {
+            let count = 0;
+            for (const char of str) {
+                if (char === "a" ||
+                    char === "e" ||
+                    char === "i" ||
+                    char === "o" ||
+                    char === "u") {
+                    count++;
+                }
+            }
+            console.log(count);
+        }
+        console.log("apna college")
+        countVowels("apna college")
+
+        // same ques witharrow function
+        const countvow = (str) => {
+            let count = 0;
+            for (const char of str) {
+                if (char === "a" ||
+                    char === "e" ||
+                    char === "i" ||
+                    char === "o" ||
+                    char === "u") {
+                    count++;
+                }
+            }
+            //return count;
+            console.log(count);
+        }
+        console.log("qwerty")
+        countvow("qwerty")
+
+        //foreach function
+
+        let arr = [1, 2, 3, 4, 5];
+
+        arr.forEach(function printVal(val) {
+            console.log(val);
+        });
+
+        let arr2 = ["pune", "delhi"];
+
+        arr2.forEach((ral, idx) => {
+            console.log(ral.toUpperCase(), idx);
+        });
+
+        /// practice ques in square of num print
+
+        let nums = [2, 3, 4, 5, 66];
+
+        nums.forEach((num) => {
+            console.log(num * num);//num**2
+        });
+
+        let num1 = [66, 78, 59];
+
+        let calcSquare = (num1) => {
+            console.log(num1 * num1);//num**2
+        };
+        num1.forEach(calcSquare);
+
+        
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

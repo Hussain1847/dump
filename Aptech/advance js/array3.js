@@ -1,0 +1,29 @@
+                                                //Errors Handlings
+try {               // block of code to try
+    undefinedFunction();
+}
+catch(err) {        // block to handle errors
+console.log(err.message);
+}
+
+
+// Input validation
+
+var x   = document.getElementById("mynum").value;
+
+try {
+if(x == "") throw "empty";
+if(isNaN(x)) throw "not a number";  // error cases
+x= Number(x);
+if(x > 10) throw "too high";
+}
+
+catch(err) {    // if there's an error
+document.write("Input is " + err);// output error
+console.error(err);
+}
+
+// write the error in console
+finally {// executed regardless of the try/catch result
+document.write("</br />Done");
+}

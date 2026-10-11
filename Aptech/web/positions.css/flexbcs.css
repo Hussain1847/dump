@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    background-color: brown;
+}
+
+.leftside { }
+
+.rightside {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.bigimage{
+    background: url("https://www.topgear.com/sites/default/files/cars-car/image/2023/09/33136-RS7PERFORMANCEASCARIBLUEJORDANBUTTERS208.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}

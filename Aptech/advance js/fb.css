@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: skyblue;
+    font-size: italic;
+    text-align: center;
+    width: 200px;
+    /*height:300px */
+}
+.box img{
+    width: 50%;
+    height: 50%;
+    border-radius: 500px;
+}
+button{
+    color: yellow;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    margin: 2px;
+}
+
+h6{
+    background-color: aqua;
+    width: 50%;
+}
+
+span{
+    background-color: aqua;
+    width: 50%;
+}

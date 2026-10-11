@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">DOM</h1>
+    <h1>DOM</h1>
+
+    <div id="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+    <script>
+
+        //console.log(document)
+    const text= document.getElementById("text");
+    const boxes= document.getElementById("box")
+    text.innerHTML = "Document Object Models";
+
+    text.style.color="#fff";
+    text.style.backgroundColor="#3e3e3e"
+    //console.log(text)
+       
+    boxes.style.width="20rem"
+    boxes.style.height="20rem"
+    boxes.style.backgroundColor="blue"
+
+    const circle= document.getElementsByClassName("box")
+    circle[0].style.width="20rem"
+    circle[0].style.height="20rem"
+    circle[0].style.backgroundColor="black"
+    circle[0].style.borderRadius="100%"
+    console.log(circle);
+
+
+    for (let i = 1 ; i <= circle.length; i++) {
+        console.log(i);
+
+
+        circle[i].style.width="20rem"
+        circle[i].style.height="20rem"
+        circle[i].style.backgroundColor="green"
+        circle[i].style.borderRadius="100%"
+    }
+
+    </script>
+
+
+</body>
+</html>

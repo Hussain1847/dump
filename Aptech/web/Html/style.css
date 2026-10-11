@@ -1,0 +1,43 @@
+@font-face{
+             font-family: my font;
+             src: url(./assets/NewAmsterdam-Regular.ttf);
+}
+
+
+
+.firsth1 {
+    background-color: aqua;
+    color: rgb(70, 8, 151);
+}
+
+
+.abc {
+    background-color: rgb(127, 158, 126);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#zx {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(90, 57, 17);
+    font-size: 12px;
+    color: rgb(247, 241, 233);
+    font-style: oblique;
+
+}
+
+.sech2{
+    background-color: blanchedalmond;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#sech2{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: rgb(3, 24, 24);
+
+
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic News Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .card p {
+            margin: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: #fff;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My News Website</h1>
+        <p>Latest Updates and Stories</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Sports</a>
+        <a href="#">Technology</a>
+        <a href="#">Entertainment</a>
+    </nav>
+
+    <div class="container">
+        <h2>Top Stories</h2>
+        <div class="news" id="newsContainer">
+            <!-- News will be injected here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My News Website | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Fake news articles
+        const newsData = [
+            {
+                title: "🚀 New Space Mission Announced",
+                description: "Scientists have revealed plans for a new mission to explore Mars by 2030.",
+                image: "https://picsum.photos/400/200?random=1"
+            },
+            {
+                title: "🏆 Local Team Wins Championship",
+                description: "In an exciting final match, the local football team secured a historic victory.",
+                image: "https://picsum.photos/400/200?random=2"
+            },
+            {
+                title: "📱 New Smartphone Released",
+                description: "Tech giant unveils its latest flagship phone with groundbreaking features.",
+                image: "https://picsum.photos/400/200?random=3"
+            },
+            {
+                title: "🎬 Upcoming Movie Breaks Records",
+                description: "The trailer of the most awaited movie has broken online viewership records.",
+                image: "https://picsum.photos/400/200?random=4"
+            },
+            {
+                title: "🌍 Climate Change Awareness Rising",
+                description: "Young activists are pushing governments to take stronger action on climate change.",
+                image: "https://picsum.photos/400/200?random=5"
+            }
+        ];
+
+        function loadNews() {
+            const container = document.getElementById("newsContainer");
+            container.innerHTML = "";
+
+            newsData.forEach(article => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+          <img src="${article.image}" alt="News Image">
+          <h3>${article.title}</h3>
+          <p>${article.description}</p>
+        `;
+                container.appendChild(card);
+            });
+        }
+
+        // Load news on page load
+        window.onload = loadNews;
+    </script>
+</body>
+
+</html>

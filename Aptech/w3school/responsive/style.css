@@ -1,0 +1,26 @@
+
+
+    input:invalid {
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% {transform: translate(4px);}
+    50% {transform: translate(-4px);}
+    75% {transform: translate(4px);}
+}
+
+.container {
+    border-image: fill 0 linear-gradient(#0001,#110707);
+}
+
+img {
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: 10px 7px 20px orange;
+    filter: drop-shadow(10px 7px 10px orange);
+}
+
+.con {
+    box-shadow: 10px 7px 20px orange;
+    filter: drop-shadow(10px 7px 10px orange);
+}

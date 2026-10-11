@@ -1,0 +1,32 @@
+nav{
+    background-color: chartreuse;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.right{
+    display: flex;
+    /*justify-content: end;*/
+
+}
+
+.parent{
+    background-color: aqua;
+    height: 70vh;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.class{
+background-color: gray;
+width: 70px;
+height: 50px;
+
+}

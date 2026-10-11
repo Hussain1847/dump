@@ -1,0 +1,45 @@
+.firstH1 {
+    background-color: brown;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+/*.#secondH1{
+    background-color: aqua;
+}*/
+
+#secondH1 {
+    background-color: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*index4{
+    font-size: 12px;
+}*/
+
+#firstPara{
+    background-color: beige;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.second{
+    background-color: blanchedalmond;
+    color: aqua;
+    font-size: 20 px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border: 7px solid;
+
+}
+
+.third{
+    color: black;
+    background-color: aquamarine;
+    font-size: 20px;
+    border:  blue 7px solid;
+    border-radius: 20px;
+    padding: 18px;
+    margin: 12px;
+}

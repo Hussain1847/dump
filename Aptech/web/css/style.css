@@ -1,0 +1,59 @@
+@font-face {
+    font-family: pacifico;
+    src: url(./asset/Lobster-Regular.ttf);
+
+
+}
+
+@font-face{
+font-family: my;
+src: url(./asset/Pacifico-Regular.ttf);
+
+}
+
+
+#p{
+    background-color: aqua;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 3%;
+    margin-left: 100px;
+    font-family: my;
+}
+
+
+
+h1{
+    text-transform: uppercase;
+    background-color: beige;
+}
+
+
+
+
+h2{
+    text-transform: lowercase;
+}
+
+h3{
+    text-transform: capitalize;
+
+}
+
+.secondpara{
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 21px;
+    text-transform: capitalize;
+    padding: 7%;
+    font-family: pacifico;
+    border-radius: 5px;color: bisque;
+    border-style: dashed;
+    border-width: 30px;
+
+}
+
+body{
+    background-color: bisque;
+}

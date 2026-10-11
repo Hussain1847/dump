@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+
+
+
+        const num = [1, 2, 3, 5, 6];
+        console.log(num)
+        console.log(num[3])
+        num.filter((items) => {
+            console.log(items > 2)
+        })
+
+
+        const number2 = num.map((items) => {
+            return items * 2
+        })
+
+        console.log(number2);
+
+
+        const number = num.forEach((items) => {
+            return items * 2
+        })
+        console.log(number)
+
+        const car = {
+            model: 2024,
+            color: "Black"
+        }
+
+        console.log(car)
+        const keys3 = Object.entries(car);
+        console.log(keys3)
+
+        const number3 = keys3.flat(Infinity);
+        console.log(number3)
+
+        const keys = Object.keys(car);
+        console.log(keys)
+        const keys2 = Object.values(car);
+        console.log(keys2)
+
+        const person = {
+            name: "Asif",
+            hight: "5.6 inchs",
+            Education: {
+                matric: "A",
+                Grd: {
+
+                }
+            }
+        }
+
+        const people = new Object();
+        people.name = "Uzair";
+        people.age - 25,
+            console.log(people)
+
+
+        function add() {
+            console.log(20 + 30)
+        }
+        add()
+        const sum = () => console.log(20 + 30)
+        sum()
+
+
+
+    </script>
+
+
+</body>
+
+</html>
